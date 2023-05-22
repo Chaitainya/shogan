@@ -1,0 +1,108 @@
+
+*{
+    font-family: "Helvetica Neue",Arial,sans-serif;
+    text-transform: uppercase;
+    /* font-style: italic; */
+    letter-spacing: .07em;
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container-fluid{
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar{
+    height: 12vh;
+}
+
+.navbar > div{
+    width: 50%;
+    height: 100%;
+}
+
+.brandLogo{
+    height: 100%;
+}
+
+/* .mobile-number{
+    display: none;
+    margin: 0 1rem;
+    color: #ff3131;
+    font-weight: 800;
+    cursor: pointer;
+} */
+
+/* .call-icon{
+    height: 45%;
+    cursor: pointer;
+} */
+
+.list-group{
+    width: 77% !important;
+}
+
+.list-group-item{
+    font-size: 13px;
+    border-radius: .3rem;
+    padding: 0.35rem 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: #ef595a;
+    color: #fff;
+}
+
+.list-group-item:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.shogun-banner{
+    height: 88vh;
+}
+
+.goToTop{
+    /* position: absolute; */
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+.goToTop > img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 4rem;
+    object-fit: cover;
+}
+#topArrowIcon{
+    display: block;
+}
+#kushboo{
+    display: none;
+}
+
+/* Custom Bootstrap */
+.btn:focus {
+    box-shadow: 0 0 0 0.2rem rgb(255 0 0 / 25%);
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}

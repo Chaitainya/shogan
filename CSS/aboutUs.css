@@ -1,0 +1,70 @@
+#about-us {
+    background-color: #0a1626;
+    display: flex;
+    border-top: 1px solid #3c4451;
+}
+
+#about-us > div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gloves-blink{
+    border: 5px solid #ff252a;
+    width: 76%;
+    border-radius: 20rem;
+    transition: 1s ease-in;
+    /* filter: grayscale(1); */
+}
+
+/* #gloves-blink:hover{
+    filter: grayscale(0)
+} */
+
+.about-patches:first-child {
+    top: 37px;
+    left: 23px;
+    background-color: #ff252a;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 15rem;
+}
+
+.about-patches{
+    bottom: 37px;
+    right: 23px;
+    background-color: #ff252a;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 15rem;
+}
+
+.about-right{
+    flex-direction: column;
+}
+
+.about-cards{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem !important;
+}
+
+/* Check Icon */
+.check{
+    border-radius: 2rem;
+    background-color: #ff252a;
+    width: 1.7rem;
+    height: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+
+.check > img{
+    width: 1.1rem;
+    border-radius: 2rem;
+}
