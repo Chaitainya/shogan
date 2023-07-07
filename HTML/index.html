@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="../CSS/aboutUs.css">
     <link rel="stylesheet" href="../CSS/programs.css">
     <link rel="stylesheet" href="../CSS/shogunWelcomeModal.css">
+    <link rel="stylesheet" href="../CSS/gallery.css">
 
     <!-- <script src="../JS/textToSpeech.js"></script> -->
     
@@ -183,6 +184,23 @@
 
         </div>
 
+        <div id="gallery" class="main">
+
+            <!-- <div>
+                <h1 style="color: #000; text-align: center; font-weight: 700;">
+                    Photos
+                </h1>
+            </div> -->
+
+            <!-- <div>
+                <img class="d-block w-100" src="../IMAGES/gallery/1.jpg">
+            </div> -->
+
+            <div id="gallery-items"></div>
+        </div>
+
+        </div>
+
         <!-- First Welcome Modal -->
         <!-- <div class="modal fade" id="shogun-welcome-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="background-color: rgba(8,25,43,0.85);">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -239,30 +257,29 @@
 
     </div>
     
-    
+    <script src="../JS/gallery.js"></script>
     <script>
         (function(){
             // $('#shogun-welcome-modal').modal('show');
 
-            setTimeout(() => {
-                // $('#shogun-welcome-modal').modal('hide');
-                $('#grappling-welcome-modal-one').modal('show');
+            // setTimeout(() => {
+            //     // $('#shogun-welcome-modal').modal('hide');
+            //     $('#grappling-welcome-modal-one').modal('show');
 
-                setTimeout(() => {
-                    $('#grappling-welcome-modal-one').modal('hide');
-                    $('#grappling-welcome-modal-two').modal('show');
+            //     setTimeout(() => {
+            //         $('#grappling-welcome-modal-one').modal('hide');
+            //         $('#grappling-welcome-modal-two').modal('show');
 
-                    setTimeout(() => {
-                        $('#grappling-welcome-modal-two').modal('hide');
-                    }, 2000);
+            //         setTimeout(() => {
+            //             $('#grappling-welcome-modal-two').modal('hide');
+            //         }, 2000);
 
-                }, 2000);
+            //     }, 2000);
 
-            }, 2000);
+            // }, 2000);
 
             window.addEventListener("scroll", function(event) {
                 var top = this.scrollY;
-                console.log(top);
                 if(top === 0){
                     setTimeout(() => {
                         if(top === 0) document.querySelector('.goToTop').style.display = 'none';
@@ -277,8 +294,11 @@
             });
 
             $('[data-toggle="tooltip"]').tooltip();
+            $('.carousel').carousel()
 
             setInterval(() => aboutUsGlovesBlink(), 1500);
+
+            getGallery();
         })();
 
         // window.addEventListener("click", function(event) {
