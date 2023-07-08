@@ -42,4 +42,6 @@
 
 #choosedImage{
     height: 95%;
+    width: 100%;
+    object-fit: contain;
 }
