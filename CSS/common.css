@@ -115,6 +115,9 @@ body{
 
 /* Responsiveness */
 @media only screen and (max-width: 768px){
+    #shogunWebMenu{
+        display: none;
+    }
     #shogunMenu{
         display: block;
     }
