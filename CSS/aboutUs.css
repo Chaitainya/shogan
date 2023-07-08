@@ -64,7 +64,22 @@
     margin-right: 0.5rem;
 }
 
+.about-right-two-1 > div > h6{
+    color: #ADADAD;
+}
+
+.about-right-two-2 > div > h6{
+    color: #ADADAD;
+}
+
 .check > img{
     width: 1.1rem;
     border-radius: 2rem;
+}
+
+.about-right-two{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

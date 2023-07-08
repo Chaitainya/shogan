@@ -7,3 +7,7 @@
 #martialArtDescription{
     text-transform: none;
 }
+
+.card{
+    width: 18rem;
+}
