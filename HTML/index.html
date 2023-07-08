@@ -30,6 +30,20 @@
     <link rel="stylesheet" href="../CSS/footer.css">
 
     <!-- <script src="../JS/textToSpeech.js"></script> -->
+
+    <script>
+        function openQuickLinks(type, calledFrom){
+
+            if(!calledFrom){
+                if(type === 'show') document.getElementById('mobileQuickLinks').style.display = 'flex';
+                else document.getElementById('mobileQuickLinks').style.display = 'none';
+            }else{
+                if(document.getElementById('mobileQuickLinks').style.display == 'none')
+                    document.getElementById('mobileQuickLinks').style.display = 'flex';
+                else document.getElementById('mobileQuickLinks').style.display = 'none';   
+            }
+        }
+    </script>
     
 </head>
 <body>
@@ -45,7 +59,7 @@
             </div>
         </div>
 
-        <div class="main">
+        <div id="navbarAndBanner" class="main">
 
             <div class="navbar d-flex">
                 <div>
@@ -55,11 +69,36 @@
                     <!-- <h5 class="mobile-number" onclick="copyMobileNumber('9912003334')" data-placement="bottom" title="Copied">9912003334</h5>
                     <img class="call-icon" src="../IMAGES/telephone.png" alt="" onclick="toggleMobile(event);"> -->
 
-                    <div class="list-group align-items-center flex-row w-100">
+                    <div class="list-group align-items-center flex-row w-100" style="display: none;">
                         <a href="#about-us" class="list-group-item list-group-item-action mr-2">ABOUT US</a>
                         <a href="#programs" class="list-group-item list-group-item-action mr-2">PROGRAMS</a>
                         <a href="#footer" class="list-group-item list-group-item-action mr-2">CONTACT US</a>
                         <a href="https://martialartslearning.online/" target="_blank" class="list-group-item list-group-item-action mr-2">BLOG</a>
+                    </div>
+
+                    <div id="shogunMenu" style="position: relative;">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            style="width: 3rem;"
+                            onclick="openQuickLinks('show', true);">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>     
+                        
+                        <div id="mobileQuickLinks" class="list-group align-items-center" style="width: 13rem !important;
+                        display: none;
+                        position: absolute;
+                        right: 0.3rem;
+                        height: 11rem;
+                        justify-content: space-between;
+                        background-color: #fff;
+                        padding: 0.5rem;
+                        border-radius: 0.3rem;
+                        box-shadow: 0 0 7px 1px #000;">
+                            <a href="#about-us" class="list-group-item list-group-item-action" style="width: 100% !important;" onclick="openQuickLinks('hide', false);">ABOUT US</a>
+                            <a href="#programs" class="list-group-item list-group-item-action" style="width: 100% !important;" onclick="openQuickLinks('hide', false);">PROGRAMS</a>
+                            <a href="#footer" class="list-group-item list-group-item-action" style="width: 100% !important;" onclick="openQuickLinks('hide', false);">CONTACT US</a>
+                            <a href="https://martialartslearning.online/" target="_blank" class="list-group-item list-group-item-action" style="width: 100% !important;" onclick="openQuickLinks('hide', false);">BLOG</a>
+                        </div>
                     </div>
 
                 </div>
@@ -76,10 +115,6 @@
         <!-- ABOUT -->
         <div id="about-us" class="main">
             <div class="about-left position-relative">
-
-                <!-- <div class="about-patches position-absolute"></div>
-                <div class="about-patches position-absolute"></div> -->
-
                 <img id="gloves-blink" src="../IMAGES/portrait-of-professional-boxer-showing-defence-pose.jpg" alt="portrait-of-professional-boxer-showing-defence-pose">
             </div>
             <div class="about-right" style="justify-content: space-evenly;">
@@ -132,7 +167,7 @@
                         </div>
                     </div>
 
-                    <div style="margin-top: 2rem;">
+                    <div id="ourProgramsBtn" style="margin-top: 2rem;">
                         <a href="#programs">
                             <button type="button" class="btn" style="background-color: #ff252a; color: #fff">OUR PROGRAMS</button>
                         </a>
@@ -234,7 +269,7 @@
                 <div class="addresses">
                     <div>
                         <h5>Kondapur</h5>
-                        <div style="display: flex;">
+                        <div id="kondapurDiv">
                             <div class="mapouter">
                                 <div class="gmap_canvas">
                                     <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=245&amp;height=245&amp;hl=en&amp;q=shogan martial arts academy konapur&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
@@ -247,7 +282,7 @@
                     </div>
                     <div>
                         <h5>Manikonda</h5>
-                        <div style="display: flex;">
+                        <div id="manikondaDiv">
                             <div class="mapouter">
                                 <div class="gmap_canvas">
                                     <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=214&amp;height=129&amp;hl=en&amp;q=shogan martial arts academy manikonda&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
@@ -262,8 +297,12 @@
             </div>
 
             <div class="emailAndMobile">
-                <div style="text-transform: none;">
+                <div id="webContactInfo" style="text-transform: none;">
                     info@shogunmartialartsacademy.com | 9912003334
+                </div>
+                <div id="mobileContactInfo" style="text-transform: none;">
+                    Email: info@shogunmartialartsacademy.com <br>
+                    Mobile: 9912003334
                 </div>
                 <div class="socialLinks">
                     <a href="http://www.facebook.com/shogunmartialsartsacademy/" target="_blank" rel="noopener noreferrer">

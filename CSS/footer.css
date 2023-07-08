@@ -1,17 +1,18 @@
 #footer{
-    height: 60vh;
+    min-height: 60vh;
     background-color: #0a1626;
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    /* background-image: url(../IMAGES/footer/footer-vectre.png);
+
+    background-image: url(../IMAGES/footer/footer-vectre.png);
     opacity: 1;
     background-position: center center;
     background-repeat: no-repeat;
     transition: background 0.3s ease 0s,
-    border-radius 0.3s ease 0s, opacity 0.3s ease 0s; */
+    border-radius 0.3s ease 0s, opacity 0.3s ease 0s;
 }
 
 .alert-danger{
@@ -104,6 +105,16 @@
     margin-right: 1rem;
 }
 
+#kondapurDiv, #manikondaDiv{
+    display: flex;
+}
+
+#webContactInfo{
+    display: block;
+}
+#mobileContactInfo{
+    display: none;
+}
 
 /* Kondapur */
 /* .mapouter{position:relative;text-align:right;width:245px;height:245px;}.gmap_canvas {overflow:hidden;background:none!important;width:245px;height:245px;}.gmap_iframe {width:245px!important;height:245px!important;} */
