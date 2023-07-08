@@ -46,15 +46,22 @@ let gallery = [
 function getGallery(){
     gallery.forEach((image, index) => {
         document.getElementById('gallery-items').innerHTML += `
-            <div id="gallery-item-${index}" onmouseover="increase(this)" onmouseout="reset(this)" style="
-            width: 20%;
-            height: 25%;
-            padding: 0.5rem;
-            box-shadow: 0 0 11px -3px #000;
-            margin: 0.5rem;
-            cursor: pointer;
-            border-radius: 0.3rem;
-            transition: .3s ease-in;"
+            <div
+                id="gallery-item-${index}"
+                onmouseover="increase(this)"
+                onmouseout="reset(this)"
+                onclick="openImage('show', '${image.image}');"
+                style=
+                "
+                    width: 20%;
+                    height: 207.925px;
+                    padding: 0.5rem;
+                    box-shadow: 0 0 11px -3px #000;
+                    margin: 0.5rem;
+                    cursor: pointer;
+                    border-radius: 0.3rem;
+                    transition: .3s ease-in;
+                "
             >
                 <img style="width: 100%; height: 100%; object-fit: cover;" src="${image.image}">
             </div>
@@ -64,10 +71,22 @@ function getGallery(){
 
 function increase(event){
     document.getElementById(event.id).style.width = '22%';
-    document.getElementById(event.id).style.height = '27%';
+    document.getElementById(event.id).style.height = '210px';
 }
 
 function reset(event){
     document.getElementById(event.id).style.width = '20%';
-    document.getElementById(event.id).style.height = '25%';
+    document.getElementById(event.id).style.height = '210px';
+}
+
+function openImage(type, source){
+    if(type === 'show'){
+        console.log("show");
+        document.getElementById('choosedImage').src = source;
+        document.getElementById('gallery-popup').style.display = 'block';
+    }
+    else{
+        document.getElementById('gallery-popup').style.display = 'none';
+        document.getElementById('choosedImage').src = source;
+    }
 }

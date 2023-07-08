@@ -3,3 +3,7 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+#martialArtDescription{
+    text-transform: none;
+}

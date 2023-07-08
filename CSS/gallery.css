@@ -1,6 +1,45 @@
+#gallery{
+    min-height: 100vh !important;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
 #gallery-items{
-    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+#gallery-popup{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: #000000e3;
+    z-index: 9999;
+}
+
+#gallery-popup > div{
+    display: flex;
+    color: #fff;
+    padding: 1rem;
+}
+
+.imageCancel{
+    justify-content: end;
+}
+
+.imageContainer{
+    justify-content: center;
+    height: 95%;
+    padding-top: 0 !important;
+}
+
+#gallery-popup > div > span{
+    text-transform: initial;
+    cursor: pointer;
+}
+
+#choosedImage{
+    height: 95%;
 }
