@@ -81,6 +81,13 @@ body{
     height: 88vh;
 }
 
+#websiteBanner{
+    display: block;
+}
+#mobileBanner{
+    display: none;
+}
+
 #mobileQuickLinks{
     width: 13rem !important;
     display: none;
@@ -140,6 +147,12 @@ body{
     }
     .shogun-banner {
         height: auto;
+    }
+    #websiteBanner{
+        display: none;
+    }
+    #mobileBanner{
+        display: block;
     }
 
     #about-us{

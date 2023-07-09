@@ -81,7 +81,6 @@ function reset(event){
 
 function openImage(type, source){
     if(type === 'show'){
-        console.log("show");
         document.getElementById('choosedImage').src = source;
         document.getElementById('gallery-popup').style.display = 'block';
     }
