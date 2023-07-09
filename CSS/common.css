@@ -79,6 +79,7 @@ body{
 
 .shogun-banner{
     height: 88vh;
+    position: relative;
 }
 
 #websiteBanner{
@@ -236,9 +237,15 @@ body{
         padding: 0.5rem !important;
         margin-bottom: 0 !important;
     }
+    #gallery > div:first-child{
+        width: 100% !important;   
+    }
     #gallery-items > div{
         width: 100% !important;
     }
+    /* #master-sripal{
+        display: none;
+    } */
 
     #footer{
         justify-content: space-between !important;

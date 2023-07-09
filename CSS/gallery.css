@@ -1,7 +1,9 @@
 #gallery{
     min-height: 100vh !important;
     height: auto;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    background-color: #0a1626;
+    position: relative;
 }
 
 #gallery-items{

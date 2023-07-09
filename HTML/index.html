@@ -44,6 +44,8 @@
             }
         }
     </script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     
 </head>
 <body>
@@ -100,6 +102,21 @@
             </div>
 
             <div class="shogun-banner">
+
+                <!-- Banner Boxing -->
+                <lottie-player
+                    src="../lotteAnimations/105666-boxing.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 12%;
+                    height: 100%;
+                    position: absolute;
+                    left: 43%;
+                    top: 0;"
+                    loop
+                    autoplay>
+                </lottie-player>
+
                 <img id="websiteBanner" src="../IMAGES/WebsiteBanner_1.jpg" alt="">
                 <img id="mobileBanner" src="../IMAGES/NewBanner.jpeg" alt="">
                 <!-- <img class="w-100 object-fit-cover" style="max-height: 100%;" src="../IMAGES/WebsiteBanner_2.jpg" alt=""> -->
@@ -113,7 +130,19 @@
             <div class="about-left position-relative">
                 <img id="gloves-blink" src="../IMAGES/portrait-of-professional-boxer-showing-defence-pose.jpg" alt="portrait-of-professional-boxer-showing-defence-pose">
             </div>
-            <div class="about-right" style="justify-content: space-evenly;">
+            <div class="about-right" style="justify-content: space-evenly; /*position: relative;*/">
+
+                <!-- <lottie-player
+                    src="../lotteAnimations/93472-shameless-path-animation-loop-loading.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 100%;
+                    height: 28%;
+                    position: absolute;
+                    bottom: 0;"
+                    loop
+                    autoplay>
+                </lottie-player> -->
 
                 <div>
                     <h1 style="color: #ff252a; font-weight: 700;">ABOUT US</h1>
@@ -231,12 +260,42 @@
 
         </div>
 
-        <div id="gallery" class="main">
-            <div id="gallery-items"></div>
+        <div id="gallery" class="main" style="/* display: flex; */">
+            <!-- <div style="width: 80%;"> -->
+                <h4 style="text-align: center; color: #fff; padding-top: 1rem;">
+                    Photos
+                </h4>
+                <div id="gallery-items"></div>
+            <!-- </div> -->
+            <!-- <div id="master-sripal" style="width: 20%; position: relative;">
+                <lottie-player
+                    src="../lotteAnimations/124748-dre-boxing.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 100%; height: 46%; position: absolute;
+                    bottom: 0;"
+                    loop
+                    autoplay>
+                </lottie-player>
+            </div> -->
         </div>
 
         <!-- Timings -->
         <div class="alert alert-danger" role="alert">
+            <!-- Punching animation -->
+            <lottie-player
+                src="../lotteAnimations/78142-punches.json"
+                background="transparent"
+                speed="1"
+                style="width: 20%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;"
+                loop
+                autoplay>
+            </lottie-player>
+
             <div>
                 <h4 class="alert-heading">Timings</h4>
                 <hr>
@@ -257,7 +316,8 @@
 
             <div class="trainingLocations">
                 <h4 style="text-align: center;">
-                    Our training locations
+                    <!-- Our training locations -->
+                    Contact us
                 </h4>
                 <div class="addresses">
                     <div>

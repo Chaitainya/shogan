@@ -37,10 +37,7 @@ let gallery = [
     },
     {
         image: '../IMAGES/gallery/13.jpeg'
-    },
-    {
-        image: '../IMAGES/gallery/14.jpeg'
-    },
+    }
 ];
 
 function getGallery(){
@@ -61,6 +58,7 @@ function getGallery(){
                     cursor: pointer;
                     border-radius: 0.3rem;
                     transition: .3s ease-in;
+                    background-color: #fff;
                 "
             >
                 <img style="width: 100%; height: 100%; object-fit: cover;" src="${image.image}">
