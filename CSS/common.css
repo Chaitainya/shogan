@@ -149,10 +149,10 @@ body{
         height: auto;
     }
     #websiteBanner{
-        display: none;
+        display: none !important;
     }
     #mobileBanner{
-        display: block;
+        display: block !important;
     }
 
     #about-us{
