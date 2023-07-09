@@ -68,8 +68,6 @@
                     <img class="brandLogo" src="../IMAGES/SHOGUN-BRAND.png" alt="Shogan Brand Logo" data-toggle="tooltip" data-placement="bottom" title="Shogun Martial Arts Academy">
                 </div>
                 <div style="display: flex; justify-content: end; align-items: center;">
-                    <!-- <h5 class="mobile-number" onclick="copyMobileNumber('9912003334')" data-placement="bottom" title="Copied">9912003334</h5>
-                    <img class="call-icon" src="../IMAGES/telephone.png" alt="" onclick="toggleMobile(event);"> -->
 
                     <div id="shogunWebMenu" class="list-group align-items-center flex-row w-100">
                         <a href="#about-us" class="list-group-item list-group-item-action mr-2">ABOUT US</a>
@@ -103,24 +101,25 @@
 
             <div class="shogun-banner">
 
-                <!-- Banner Boxing -->
+                <!-- Leon -->
                 <lottie-player
-                    src="../lotteAnimations/105666-boxing.json"
+                    id="leon"
+                    src="../lotteAnimations/69754-olympics-karate.json"
                     background="transparent"
                     speed="1"
-                    style="width: 12%;
-                    height: 100%;
-                    position: absolute;
-                    left: 43%;
-                    top: 0;"
+                    style="
+                        width: 12%;
+                        height: 21%;
+                        position: absolute;
+                        left: 40%;
+                        bottom: 0;
+                    "
                     loop
                     autoplay>
                 </lottie-player>
 
                 <img id="websiteBanner" src="../IMAGES/WebsiteBanner_1.jpg" alt="">
                 <img id="mobileBanner" src="../IMAGES/NewBanner.jpeg" alt="">
-                <!-- <img class="w-100 object-fit-cover" style="max-height: 100%;" src="../IMAGES/WebsiteBanner_2.jpg" alt=""> -->
-                <!-- <img class="w-100 object-fit-cover" style="max-height: 100%;" src="../IMAGES/NewBanner.jpeg" alt=""> -->
             </div>
 
         </div>
@@ -130,19 +129,22 @@
             <div class="about-left position-relative">
                 <img id="gloves-blink" src="../IMAGES/portrait-of-professional-boxer-showing-defence-pose.jpg" alt="portrait-of-professional-boxer-showing-defence-pose">
             </div>
-            <div class="about-right" style="justify-content: space-evenly; /*position: relative;*/">
+            <div class="about-right" style="justify-content: space-evenly; position: relative;">
 
-                <!-- <lottie-player
-                    src="../lotteAnimations/93472-shameless-path-animation-loop-loading.json"
+                <!-- Jaswant Punching animation -->
+                <lottie-player
+                    id="jaswant"
+                    src="../lotteAnimations/78142-punches.json"
                     background="transparent"
                     speed="1"
-                    style="width: 100%;
-                    height: 28%;
+                    style="width: 20%;
+                    height: 22%;
                     position: absolute;
-                    bottom: 0;"
+                    bottom: 0;
+                    left: 0;"
                     loop
                     autoplay>
-                </lottie-player> -->
+                </lottie-player>
 
                 <div>
                     <h1 style="color: #ff252a; font-weight: 700;">ABOUT US</h1>
@@ -214,7 +216,6 @@
                 <div class="card">
                     <img class="card-img-top" src="../IMAGES/programs/01-2.png" alt="Card image cap">
                     <div class="card-body">
-                        <!-- <p class="card-text">Karate is a traditional Japanese martial art that emphasizes striking techniques and self-defense. It promotes physical fitness, mental discipline, and the development of character.</p> -->
                         <p class="card-text">Karate is a traditional Japanese martial art that emphasizes striking techniques and self-defense.</p>
                         <button type="button" class="btn" style="background-color: #ff252a; color: #fff; font-size: 14px; padding: 6px;" onclick="readMore('karate');">READ MORE</button>
                     </div>
@@ -223,7 +224,6 @@
                 <div class="card">
                     <img class="card-img-top" src="../IMAGES/programs/01-1.png" alt="Card image cap">
                     <div class="card-body">
-                        <!-- <p class="card-text">MMA, or Mixed Martial Arts, is a combat sport that combines various fighting disciplines such as wrestling, boxing, Brazilian Jiu-Jitsu, and Muay Thai. It allows fighters to utilize a wide range of techniques to compete both standing and on the ground.</p> -->
                         <p class="card-text">MMA, or Mixed Martial Arts, is a combat sport that combines various fighting disciplines such as wrestling, boxing, Brazilian Jiu-Jitsu, and Muay Thai.</p>
                         <button type="button" class="btn" style="background-color: #ff252a; color: #fff; font-size: 14px; padding: 6px;" onclick="readMore('mma');">READ MORE</button>
                     </div>
@@ -232,7 +232,6 @@
                 <div class="card">
                     <img class="card-img-top" src="../IMAGES/programs/01-3.png" alt="Card image cap">
                     <div class="card-body">
-                        <!-- <p class="card-text">Kickboxing is a hybrid combat sport that incorporates elements of boxing and martial arts, focusing on punches, kicks, and knee strikes. It requires both striking and defensive skills, making it a challenging and dynamic discipline.</p> -->
                         <p class="card-text">Kickboxing is a hybrid combat sport that incorporates elements of boxing and martial arts, focusing on punches, kicks, and knee strikes.</p>
                         <button type="button" class="btn" style="background-color: #ff252a; color: #fff; font-size: 14px; padding: 6px;" onclick="readMore('kickboxing');">READ MORE</button>
                     </div>
@@ -241,7 +240,6 @@
                 <div class="card">
                     <img class="card-img-top" src="../IMAGES/programs/01-4.png" alt="Card image cap">
                     <div class="card-body">
-                        <!-- <p class="card-text">Fitness encompasses physical and mental well-being achieved through regular exercise, healthy lifestyle choices, and proper nutrition. It improves strength, endurance, flexibility, and overall quality of life.</p> -->
                         <p class="card-text">Fitness encompasses physical and mental well-being achieved through regular exercise, healthy lifestyle choices, and proper nutrition.</p>
                         <button type="button" class="btn" style="background-color: #ff252a; color: #fff; font-size: 14px; padding: 6px;" onclick="readMore('fitness');">READ MORE</button>
                     </div>
@@ -250,7 +248,6 @@
                 <div class="card">
                     <img class="card-img-top" src="../IMAGES/programs/01-5.png" alt="Card image cap">
                     <div class="card-body">
-                        <!-- <p class="card-text">Fitness encompasses physical and mental well-being achieved through regular exercise, healthy lifestyle choices, and proper nutrition. It improves strength, endurance, flexibility, and overall quality of life.</p> -->
                         <p class="card-text">Learn self-defense and gain the confidence to protect yourself. Our martial arts program equips you with practical techniques to defend against real-life threats.</p>
                         <button type="button" class="btn" style="background-color: #ff252a; color: #fff; font-size: 14px; padding: 6px;" onclick="readMore('defence');">READ MORE</button>
                     </div>
@@ -260,31 +257,19 @@
 
         </div>
 
-        <div id="gallery" class="main" style="/* display: flex; */">
-            <!-- <div style="width: 80%;"> -->
-                <h4 style="text-align: center; color: #fff; padding-top: 1rem;">
-                    Photos
-                </h4>
-                <div id="gallery-items"></div>
-            <!-- </div> -->
-            <!-- <div id="master-sripal" style="width: 20%; position: relative;">
-                <lottie-player
-                    src="../lotteAnimations/124748-dre-boxing.json"
-                    background="transparent"
-                    speed="1"
-                    style="width: 100%; height: 46%; position: absolute;
-                    bottom: 0;"
-                    loop
-                    autoplay>
-                </lottie-player>
-            </div> -->
+        <div id="gallery" class="main">
+            <h4 style="text-align: center; color: #fff; padding-top: 1rem;">
+                Photos
+            </h4>
+            <div id="gallery-items"></div>
         </div>
 
         <!-- Timings -->
         <div class="alert alert-danger" role="alert">
-            <!-- Punching animation -->
+
+            <!-- Master Sripal Getting Ready -->
             <lottie-player
-                src="../lotteAnimations/78142-punches.json"
+                src="../lotteAnimations/124748-dre-boxing.json"
                 background="transparent"
                 speed="1"
                 style="width: 20%;
@@ -329,7 +314,7 @@
                                 </div>
                             </div>
                             <div class="kondapur" style="margin-left: 1rem; width: 16rem; text-transform: capitalize;">
-                                5th Floor, High-Tension Line Rd, beside Barfi Ghar, opp. G9 Drive In, Raja Rajeshwara Nagar, Kondapur, Hyderabad, Telangana 500084
+                                5th Floor, High-Tension Line Rd, beside Barfi Ghar, opp. G9 Drive In, Raja Rajeshwara Nagar, Kondapur, Hyderabad, Telangana 500084.
                             </div>
                         </div>
                     </div>
@@ -342,7 +327,7 @@
                                 </div>
                             </div>
                             <div class="manikonda" style="margin-left: 1rem; width: 16rem; text-transform: capitalize;">
-                                H.No: 3-16/248/35/B Star Commercial Center puppalguda manikonda opposite to geetanjali vedika school
+                                H.No: 3-16/248/35/B, Star Commercial Center, puppalguda, opposite to geetanjali vedika school, manikonda, Hyderabad, Telangana 500084.
                             </div>
                         </div>
                     </div>
@@ -361,15 +346,9 @@
                     <a href="http://www.facebook.com/shogunmartialsartsacademy/" target="_blank" rel="noopener noreferrer">
                         <img src="../IMAGES/footer/facebook.png" alt="facebook">
                     </a>
-                    <!-- <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" rel="noopener noreferrer">
-                        <img src="../IMAGES/footer/gmail.png" alt="gmail">
-                    </a> -->
                     <a href="https://instagram.com/shogunmartialartsacademy?igshid=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
                         <img src="../IMAGES/footer/instagram.png" alt="instagram">
                     </a>
-                    <!-- <a href="http://www.facebook.com/shogunmartialsartsacademy/" target="_blank" rel="noopener noreferrer">
-                        <img src="../IMAGES/footer/youtube.png" alt="youtube">
-                    </a> -->
                     <a href="https://api.whatsapp.com/send?phone=919912003334" target="_blank" rel="noopener noreferrer">
                         <img src="../IMAGES/footer/whatsapp.png" alt="whatsapp">
                     </a>
@@ -386,15 +365,16 @@
     </div>
 
     <!-- First Welcome Modal -->
-    <!-- <div class="modal fade" id="shogun-welcome-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="background-color: rgba(8,25,43,0.85);">
+    <div class="modal fade" id="shogun-welcome-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="background-color: rgba(8,25,43,0.85);">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header bg_move justify-content-center border-0">
-                    <h5 class="modal-title" style="text-align: center;">WELCOME TO SHOGUN MARTIAL ARTS</h5>
+                    <!-- <h5 class="modal-title" style="text-align: center;">WELCOME TO SHOGUN MARTIAL ARTS</h5> -->
+                    <img class="brandLogo" style="width: 100%; height: 100%" src="../IMAGES/SHOGUN-BRAND.png" alt="Shogan Brand Logo" data-toggle="tooltip" data-placement="bottom" title="Shogun Martial Arts Academy">
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!-- Second Welcome Modal -->
     <div class="modal fade" id="grappling-welcome-modal-one" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="background-color: rgba(8,25,43,0.85);">
@@ -455,7 +435,17 @@
             document.getElementById('copyRightYear').innerHTML = copyRightYear;
             //
 
-            // $('#shogun-welcome-modal').modal('show');
+            /*
+            * This comes only first time
+            */
+            let shogunWelcomeModal = sessionStorage.getItem('shogun-welcome-modal');
+            if(!shogunWelcomeModal){
+                $('#shogun-welcome-modal').modal('show');
+                sessionStorage.setItem('shogun-welcome-modal', 'true');
+            }
+            //
+
+            // This is for API loading in future
 
             // setTimeout(() => {
             //     // $('#shogun-welcome-modal').modal('hide');

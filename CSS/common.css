@@ -293,4 +293,16 @@ body{
         width: 3rem;
         height: 3rem;
     }
+
+    /* Animations */
+    #leon{
+        top: 50%;
+        left: auto !important;
+        right: .8rem !important;
+    }
+
+    #jaswant{
+        height: 10% !important;
+        left: 1rem !important;
+    }
 }
