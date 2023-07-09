@@ -64,7 +64,11 @@
     margin-right: 0.5rem;
 }
 
-.about-right-two-1, .about-right-two-2{
+.about-right-two-1{
+    display: flex;
+}
+
+.about-right-two-2{
     display: flex;
 }
 
