@@ -189,9 +189,18 @@ body{
         width: .8rem !important;
     }
     .about-cards {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: start !important;
         font-size: 1rem;
+    }
+    .about-right-two-1, .about-right-two-2{
+        flex-direction: column;
+    }
+    .about-right-two-1 > div, .about-right-two-2 > div{
+        margin-bottom: 0.5rem;
+    }
+    .about-right-two-2 > div:last-child{
+        margin-bottom: 0;
     }
     .about-right-two-1 > div > h6{
         font-size: 14px;
@@ -200,6 +209,7 @@ body{
         font-size: 14px;
     }
     #ourProgramsBtn{
+        margin-top: 1rem;
         text-align: center;
     }
 

@@ -64,6 +64,10 @@
     margin-right: 0.5rem;
 }
 
+.about-right-two-1, .about-right-two-2{
+    display: flex;
+}
+
 .about-right-two-1 > div > h6{
     color: #ADADAD;
 }
@@ -82,4 +86,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+#ourProgramsBtn{
+    margin-top: 2rem;
 }
